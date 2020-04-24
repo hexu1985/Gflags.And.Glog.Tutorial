@@ -30,7 +30,7 @@ $ cmake -H. -Bbuild \
 	-DBUILD_SHARED_LIBS=OFF \
 	-DINSTALL_SHARED_LIBS=OFF \
 	-DREGISTER_INSTALL_PREFIX=OFF
-$ cmake --build . --target install
+$ cmake --build build --target install
 ```
 
 CMAKE_INSTALL_PREFIX指定安装目录前缀，可能需要sudo权限执行install命令

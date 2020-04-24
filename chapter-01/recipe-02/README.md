@@ -22,7 +22,7 @@ $ cd glog
 $ cmake -H. -Bbuild \
     -DCMAKE_INSTALL_PREFIX=~/local \
     -Dgflags_DIR=~/local/lib/cmake/gflags/
-$ cmake --build . --target install
+$ cmake --build build --target install
 ```
 
 如果需要编译动态库，需要增加`BUILD_SHARED_LIBS=ON`

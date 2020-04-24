@@ -1,5 +1,6 @@
-cmake -H. -Bbuild \
-    -DCMAKE_INSTALL_PREFIX=~/local \
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=~/local \
 	-DBUILD_gflags_LIB=ON \
 	-DBUILD_STATIC_LIBS=ON \
 	-DINSTALL_STATIC_LIBS=ON \
