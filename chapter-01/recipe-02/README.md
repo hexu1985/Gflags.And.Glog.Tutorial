@@ -19,8 +19,6 @@ $ cmake --build . --target install
 ```
 $ git clone https://github.com/google/glog.git glog
 $ cd glog
-$ mkdir build
-$ cd build
 $ cmake -H. -Bbuild \
     -DCMAKE_INSTALL_PREFIX=~/local \
     -Dgflags_DIR=~/local/lib/cmake/gflags/
