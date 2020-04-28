@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-echo "./sample --nosuch"
-./sample --nosuch
+echo "./sample --inexist"
+./sample --inexist
 
 echo
 echo
 
-echo "./sample --undefok=nosuch"
-./sample --undefok=nosuch
+echo "./sample --undefok=inexist"
+./sample --undefok=inexist

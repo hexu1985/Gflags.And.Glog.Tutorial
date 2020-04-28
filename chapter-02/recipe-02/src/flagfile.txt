@@ -1,0 +1,5 @@
+--nobig_menu
+# this is an comments
+--languages=english,french
+# inexist option will be ignore
+--inexist

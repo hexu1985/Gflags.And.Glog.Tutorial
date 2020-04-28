@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-echo "./sample --tryfromenv=nosuch"
-./sample --tryfromenv=nosuch
+echo "./sample --tryfromenv=inexist"
+./sample --tryfromenv=inexist
 
 echo
 echo
