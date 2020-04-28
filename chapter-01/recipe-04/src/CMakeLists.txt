@@ -15,6 +15,6 @@ endif ()
 
 aux_source_directory(. SRC_LIST)
 
-add_executable(bar ${SRC_LIST})
+add_executable(sample ${SRC_LIST})
 
-target_link_libraries(bar ${GFLAGS_LIBRARIES})
+target_link_libraries(sample ${GFLAGS_LIBRARIES})
