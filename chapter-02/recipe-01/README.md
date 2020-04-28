@@ -63,16 +63,3 @@ string和int之类，可以用如下方式：
 
 和getopt()一样，--将会终止标识的处理。所以在./mycmd -f1 1 -- -f2 2中， f1被认为是一个标识，但f2不会。
 
-gflags 还提供一些内置的特殊标识：
-
-```
---help  显示文件中所有标识的完整帮助信息
---helpfull  和-help 一样，
---helpshort  只显示当前执行文件里的标志
---helpxml  以 xml 凡是打印，方便处理
---version  打印版本信息，由 google::SetVersionString()设定
---flagfile  -flagfile=f 从文件 f 中读取命令行参数
-...
-```
-
-具体见：<http://gflags.googlecode.com/svn/trunk/doc/gflags.html>

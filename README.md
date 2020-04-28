@@ -12,6 +12,7 @@
 ### [Chapter1: gflags使用说明](chapter-02/README.md)
 
 - [1. gflags使用简介](chapter-02/recipe-01/README.md)
+- [2. 特殊的选项（Special Flags）](chapter-02/recipe-02/README.md)
 
 ### 参考文档
 
