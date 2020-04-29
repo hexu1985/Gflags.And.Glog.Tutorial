@@ -1,6 +1,6 @@
-### DECLARE：使用其他文件中定义的flags变量
+### DECLARE：使用其他文件中定义的gflags变量
 
-有些时候需要在main之外的文件使用定义的flags变量，这时候可以使用宏定义DECLARE_xxx(变量名)声明一下（就和c++中全局变量的使用是一样的，extern一下一样）
+有些时候需要在main之外的文件使用定义的gflags变量，这时候可以使用宏定义`DECLARE_xxx`(变量名)声明一下（就和c++中全局变量的使用是一样的，extern一下一样）
 
 ```
 DECLARE_bool: boolean
@@ -11,4 +11,4 @@ DECLARE_double: double
 DECLARE_string: C++ string 
 ```
 
-在gflags的doc中，推荐在对应的.h文件中进行DECLARE_xxx声明，需要使用的文件直接include就行了。
+在gflags的doc中，推荐在对应的.h文件中进行`DECLARE_xxx`声明，需要使用的文件直接include就行了。
