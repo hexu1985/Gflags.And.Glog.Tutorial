@@ -5,7 +5,7 @@
 示例代码如下：
 
 ```cpp
-google::CommandLineFlagInfo info;
+gflags::CommandLineFlagInfo info;
 if(GetCommandLineFlagInfo("port" ,&info) && info.is_default) {
     std::cout << "port is default!" << std::endl;
 }

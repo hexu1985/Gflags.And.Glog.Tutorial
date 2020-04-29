@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     // 解析命令行参数，一般都放在 main 函数中开始位置
     gflags::ParseCommandLineFlags(&argc, &argv, true);
 
-    google::CommandLineFlagInfo info;
+    gflags::CommandLineFlagInfo info;
     if(GetCommandLineFlagInfo("port" ,&info) && info.is_default) {
         std::cout << "port is default!" << std::endl;
     }
