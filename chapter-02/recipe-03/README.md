@@ -1,4 +1,4 @@
-### DECLARE：使用其他文件中定义的gflags变量
+### DECLARE：使用其他文件中定义的flag变量
 
 有些时候需要在main之外的文件使用定义的gflags变量，这时候可以使用宏定义`DECLARE_xxx`(变量名)声明一下（就和c++中全局变量的使用是一样的，extern一下一样）
 

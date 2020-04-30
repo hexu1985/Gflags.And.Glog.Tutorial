@@ -1,4 +1,4 @@
-### 特殊的选项（Special Flags）
+### 特殊的flag变量
 
 gflags 还提供一些内置的特殊标识：
 
