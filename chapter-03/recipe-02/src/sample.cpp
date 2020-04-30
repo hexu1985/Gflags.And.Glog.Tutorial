@@ -2,7 +2,7 @@
 
 int main(int argc,char* argv[])
 {
-    google::ParseCommandLineFlags(&argc, &argv, true);
+    gflags::ParseCommandLineFlags(&argc, &argv, true);
     google::InitGoogleLogging(argv[0]); //初始化 glog
 
     char str[20] = "hello log!";    
@@ -11,7 +11,7 @@ int main(int argc,char* argv[])
     LOG(ERROR) << "error test";        // 会输出一个Error日志 
 
     google::ShutdownGoogleLogging();
-    google::ShutDownCommandLineFlags();
+    gflags::ShutDownCommandLineFlags();
 
     return 0;
 }
