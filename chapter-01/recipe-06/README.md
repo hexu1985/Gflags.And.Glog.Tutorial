@@ -1,18 +1,18 @@
-### 项目依赖glog库：CMake，通过`find_package`
+### 项目依赖glog库：CMake，通过find_package
 
-通过`find_package`查找glog，并不需要设置`include_directories`
+通过find_package查找glog，并不需要设置include_directories
 
 ```
 find_package(glog REQUIRED)
 ```
 
-通过`target_link_libraries`链接glog库，并不需要设置`link_directories`
+通过target_link_libraries链接glog库，并不需要设置link_directories
 
 ```
 target_link_libraries(sample glog::glog)
 ```
 
-编译项目需要设置`glog_DIR`路径：如果编译glog的时候依赖了gflags库，还需要设置`gflags_DIR`路径
+编译项目需要设置glog_DIR路径：如果编译glog的时候依赖了gflags库，还需要设置gflags_DIR路径
 
 ```
 $ mkdir build
