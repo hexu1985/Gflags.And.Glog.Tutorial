@@ -20,6 +20,13 @@
 - [5. 定制你自己的help信息与version信息](chapter-02/recipe-05/README.md)
 - [6. 判断flag变量是否被用户使用](chapter-02/recipe-06/README.md)
 
+### [Chapter3: glog使用说明](chapter-03/README.md)
+
+- [1. glog使用简介](chapter-03/recipe-01/README.md)
+- [2. 设置flag变量](chapter-03/recipe-02/README.md)
+
+
+
 ### 参考文档
 
 <https://gflags.github.io/gflags/>
