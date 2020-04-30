@@ -39,3 +39,7 @@
 <https://github.com/google/glog/blob/master/doc/glog.html>
 
 <https://www.jianshu.com/p/d55838893e9c>
+
+<http://www.yeolar.com/note/2014/12/20/glog/>
+
+<https://blog.csdn.net/willinux20130812/article/details/91366167>
