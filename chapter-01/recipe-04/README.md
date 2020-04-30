@@ -1,18 +1,18 @@
-### 项目依赖gflags库：CMake，通过find_package
+### 项目依赖gflags库：CMake，通过`find_package`
 
-通过find_package查找gflags，并不需要设置include_directories
+通过`find_package`查找gflags，并不需要设置`include_directories`
 
 ```
 find_package(gflags REQUIRED)
 ```
 
-通过target_link_libraries链接gflags库，并不需要设置link_directories
+通过`target_link_libraries`链接gflags库，并不需要设置`link_directories`
 
 ```
 target_link_libraries(sample ${GFLAGS_LIBRARIES})
 ```
 
-编译项目需要设置GTest_DIR路径：
+编译项目需要设置`gflags_DIR`路径：
 
 ```
 $ mkdir build
