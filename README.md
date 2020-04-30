@@ -24,6 +24,7 @@
 
 - [1. glog使用简介](chapter-03/recipe-01/README.md)
 - [2. 设置flag变量](chapter-03/recipe-02/README.md)
+- [3. 条件输出](chapter-03/recipe-03/README.md)
 
 
 
