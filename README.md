@@ -25,6 +25,7 @@
 - [1. glog使用简介](chapter-03/recipe-01/README.md)
 - [2. 设置flag变量](chapter-03/recipe-02/README.md)
 - [3. 条件输出](chapter-03/recipe-03/README.md)
+- [4. 日志类型](chapter-03/recipe-04/README.md)
 
 
 
@@ -42,4 +43,4 @@
 
 <http://www.yeolar.com/note/2014/12/20/glog/>
 
-<https://blog.csdn.net/willinux20130812/article/details/91366167>
+<https://www.cnblogs.com/JZ-Ser/articles/7909800.html>

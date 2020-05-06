@@ -66,9 +66,9 @@ LOG(INFO) << "the same file";
     指定输出日志文件的目录。
 
 - v （ int ，默认为0）
-    显示所有 VLOG(m) 的日志， m 小于等于该flag的值。会被 --vmodule 覆盖。
+    对于使用“ VLOG(m)”（m为int型）表达式进行输出的日志信息，只在m的值小于该标志的值的时候，才进行输出。另外， 该设置可能被 vmodule标志给覆盖.默认为0.
 
 - vmodule （ string ，默认为 "" ）
-    每个模块的详细日志的级别。参数为逗号分隔的一组 <module name>=<log level> 。 <module name> 支持通配（即gfs*代表所有gfs开头的名字），匹配不包含扩展名的文件名（忽略 .cc/.h./-inl.h 等）。 <log level> 会覆盖 --v 指定的值。 
+    分模块（文件）设置VLOG(m)日志信息的输出级别。命令格式为以逗号分开的“<module name>=<log level>”表达式组成。其中<module name> 是“glob pattern”，支持通配符，<module name>不包括文件的扩展名（.h,.cc等）。<log level> 会覆盖 --v 指定的值。 
 
 logging.cc 中还定义了其他一些flag。grep一下 DEFINE_ 可以看到全部。
