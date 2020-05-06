@@ -1,14 +1,18 @@
 #include <glog/logging.h>
+#include <glog/raw_logging.h>   // for RAW_LOG
 
 int main(int argc,char* argv[])
 {
     gflags::ParseCommandLineFlags(&argc, &argv, true);
-    google::InitGoogleLogging(argv[0]); //初始化 glog
+    google::InitGoogleLogging(argv[0]);
 
-    char str[20] = "hello log!";    
-    LOG(INFO) << str ;                 // << " cookies";    
-    LOG(WARNING) << "warning test";    // 会输出一个Warning日志    
-    LOG(ERROR) << "error test";        // 会输出一个Error日志 
+    LOG(ERROR) <<"LOG";
+    VLOG(3) <<"VLOG";
+    DLOG(ERROR) <<"DLOG";
+    DVLOG(3) <<"DVLOG";
+    SYSLOG(ERROR) <<"SYSLOG";
+    PLOG(ERROR) <<"PLOG";
+    RAW_LOG(ERROR,"RAW_LOG");
 
     google::ShutdownGoogleLogging();
     gflags::ShutDownCommandLineFlags();

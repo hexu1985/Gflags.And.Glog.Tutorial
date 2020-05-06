@@ -6,35 +6,12 @@ echo "./sample"
 echo
 echo
 
-echo "./sample --alsologtostderr=true"
-./sample --alsologtostderr=true
+echo "GLOG_colorlogtostderr=true GLOG_alsologtostderr=true ./sample"
+GLOG_colorlogtostderr=true GLOG_alsologtostderr=true ./sample
 
 echo
 echo
 
-echo "./sample --alsologtostderr=true --colorlogtostderr=true"
-./sample --alsologtostderr=true --colorlogtostderr=true
+echo "GLOG_colorlogtostderr=true GLOG_alsologtostderr=true ./sample --v=3"
+GLOG_colorlogtostderr=true GLOG_alsologtostderr=true ./sample --v=3
 
-echo
-echo
-
-echo "./sample --stderrthreshold=0"
-./sample --stderrthreshold=0
-
-echo
-echo
-
-rm -r ./log
-mkdir ./log
-echo "./sample --log_dir=log"
-./sample --log_dir=log
-ls -l log
-
-echo
-echo
-
-rm -r ./log
-mkdir ./log
-echo "./sample --log_dir=log --minloglevel=2"
-./sample --log_dir=log --minloglevel=2
-ls -l log
