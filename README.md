@@ -24,8 +24,9 @@
 
 - [1. glog使用简介](chapter-03/recipe-01/README.md)
 - [2. 设置flag变量](chapter-03/recipe-02/README.md)
-- [3. 条件输出](chapter-03/recipe-03/README.md)
+- [3. 条件输出日志](chapter-03/recipe-03/README.md)
 - [4. 日志类型](chapter-03/recipe-04/README.md)
+- [5. 调试模式日志](chapter-03/recipe-05/README.md)
 
 
 
