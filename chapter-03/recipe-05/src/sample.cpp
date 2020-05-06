@@ -12,7 +12,7 @@ int main(int argc,char* argv[])
     {
         DLOG_IF(INFO,i==100)<<"DLOG_IF(INFO,i==100)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
         DLOG_EVERY_N(INFO,10)<<"DLOG_EVERY_N(INFO,10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
-        DLOG_IF_EVERY_N(WARNING,(i>50),10)<<"DLOG_IF_EVERY_N(INFO,(i>50),10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
+        DLOG_IF_EVERY_N(WARNING,(i>50),10)<<"DLOG_IF_EVERY_N(WARNING,(i>50),10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
     }
 
     google::ShutdownGoogleLogging();
