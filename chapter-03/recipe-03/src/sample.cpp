@@ -2,19 +2,16 @@
 
 int main(int argc,char* argv[])
 {
-    google::InitGoogleLogging(argv[0]);
-    FLAGS_stderrthreshold=google::INFO;
-    FLAGS_colorlogtostderr=true;
+    gflags::ParseCommandLineFlags(&argc, &argv, true);
+    google::InitGoogleLogging(argv[0]); //初始化 glog
 
-    for(int i = 1; i <= 100;i++)
-    {
-        LOG_IF(INFO,i==100)<<"LOG_IF(INFO,i==100)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
-        LOG_EVERY_N(INFO,10)<<"LOG_EVERY_N(INFO,10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
-        LOG_IF_EVERY_N(WARNING,(i>50),10)<<"LOG_IF_EVERY_N(WARNING,(i>50),10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
-        LOG_FIRST_N(ERROR,5)<<"LOG_FIRST_N(ERROR,5)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
-    }
+    char str[20] = "hello log!";    
+    LOG(INFO) << str ;                 // << " cookies";    
+    LOG(WARNING) << "warning test";    // 会输出一个Warning日志    
+    LOG(ERROR) << "error test";        // 会输出一个Error日志 
 
     google::ShutdownGoogleLogging();
+    gflags::ShutDownCommandLineFlags();
 
     return 0;
 }
