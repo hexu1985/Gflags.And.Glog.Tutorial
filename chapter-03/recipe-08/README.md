@@ -17,3 +17,5 @@ PC: @           0x412eb1 TestWaitingLogSink::send()
     @     0x7f892f7ef1c4 (unknown)
     @           0x4046f9 (unknown)
 ```
+
+默认情况下，异常信息是输出到stderr，通过InstallFailureWriter（）可以改变输出目标。
