@@ -7,11 +7,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package (glog REQUIRED)
 
-aux_source_directory(. src_files)
+aux_source_directory(. SRC_LIST)
 
-foreach (src_file ${src_files})
-    string(REGEX MATCH "[^/]+$" src_basename ${src_file})
-    string(REPLACE ".cpp" "" exe_file ${src_basename})
-    add_executable(${exe_file} ${src_file})
-    target_link_libraries(${exe_file} glog::glog)
-endforeach()
+add_executable(sample ${SRC_LIST})
+
+target_link_libraries(sample glog::glog)
