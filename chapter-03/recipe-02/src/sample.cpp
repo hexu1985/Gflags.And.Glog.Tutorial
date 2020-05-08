@@ -1,3 +1,4 @@
+#include <errno.h>
 #include <glog/logging.h>
 #include <glog/raw_logging.h>   // for RAW_LOG
 
@@ -11,6 +12,8 @@ int main(int argc,char* argv[])
     DLOG(ERROR) <<"DLOG";
     DVLOG(3) <<"DVLOG";
     SYSLOG(ERROR) <<"SYSLOG";
+
+    errno = ERANGE;
     PLOG(ERROR) <<"PLOG";
     RAW_LOG(ERROR,"RAW_LOG");
 
