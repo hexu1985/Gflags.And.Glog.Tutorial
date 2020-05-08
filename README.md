@@ -30,6 +30,7 @@
 - [6. 细节（VERBOSE）日志](chapter-03/recipe-06/README.md)
 - [7. 状态检查](chapter-03/recipe-07/README.md)
 - [8. 异常信号处理](chapter-03/recipe-08/README.md)
+- [9. 自定义失败处理函数](chapter-03/recipe-09/README.md)
 
 
 
