@@ -1,4 +1,5 @@
 #include <glog/logging.h>
+#include <iostream>
 
 int main(int argc,char* argv[])
 {
@@ -14,6 +15,12 @@ int main(int argc,char* argv[])
         VLOG_IF(2,i==100)<<"VLOG_IF(2,i==100)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
         VLOG_EVERY_N(2,10)<<"VLOG_EVERY_N(2,10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
         VLOG_IF_EVERY_N(1,(i>50),10)<<"VLOG_IF_EVERY_N(1,(i>50),10)  google::COUNTER="<<google::COUNTER<<"  i="<<i;
+    }
+
+    if (VLOG_IS_ON(2)) {
+        // do some logging preparation and logging
+        // that can't be accomplished with just VLOG(2) << ...;
+        std::cerr << "VLOG_IS_ON(2) ...\n";
     }
 
     google::ShutdownGoogleLogging();
