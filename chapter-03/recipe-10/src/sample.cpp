@@ -1,3 +1,5 @@
+#define GOOGLE_STRIP_LOG 1    // this must go before the #include!
+
 #include <errno.h>
 #include <glog/logging.h>
 #include <glog/raw_logging.h>   // for RAW_LOG

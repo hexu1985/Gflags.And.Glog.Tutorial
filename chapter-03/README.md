@@ -9,4 +9,6 @@
 - [7. 状态检查](recipe-07/README.md)
 - [8. 异常信号处理](recipe-08/README.md)
 - [9. 自定义失败处理函数](recipe-09/README.md)
+- [10. 精简日志字符串信息](recipe-10/README.md)
+- [11. 自动删除旧日志文件](recipe-11/README.md)
 
