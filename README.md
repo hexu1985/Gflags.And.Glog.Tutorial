@@ -33,6 +33,7 @@
 - [9. 自定义失败处理函数](chapter-03/recipe-09/README.md)
 - [10. 精简日志字符串信息](chapter-03/recipe-10/README.md)
 - [11. 自动删除旧日志文件](chapter-03/recipe-11/README.md)
+- [12. Windows用户的注意事项](chapter-03/recipe-12/README.md)
 
 
 
