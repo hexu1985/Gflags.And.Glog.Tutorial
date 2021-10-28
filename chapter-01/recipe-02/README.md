@@ -10,6 +10,7 @@ $ mkdir build
 $ cd build
 $ cmake -DCMAKE_INSTALL_PREFIX=~/local \
     -Dgflags_DIR=~/local/lib/cmake/gflags/ \
+    -DBUILD_SHARED_LIBS=OFF \
     ..
 $ cmake --build . --target install
 ```
@@ -21,6 +22,7 @@ $ git clone https://github.com/google/glog.git glog
 $ cd glog
 $ cmake -H. -Bbuild \
     -DCMAKE_INSTALL_PREFIX=~/local \
+    -DBUILD_SHARED_LIBS=OFF \
     -Dgflags_DIR=~/local/lib/cmake/gflags/
 $ cmake --build build --target install
 ```
