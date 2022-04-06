@@ -5,8 +5,10 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+include_directories(${gflags_INCLUDE_DIRS})
 include_directories(${glog_INCLUDE_DIRS})
 
+link_directories(${gflags_LIB_DIRS})
 link_directories(${glog_LIB_DIRS})
 
 aux_source_directory(. src_files)
