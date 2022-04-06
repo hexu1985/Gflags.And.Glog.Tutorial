@@ -1,4 +1,2 @@
-mkdir build
-cd build
-cmake -Dgflags_DIR=~/local/lib/cmake/gflags ..
-VERBOSE=1 cmake --build . 
+cmake -H. -Bbuild -Dgflags_DIR=~/local/gflags/lib/cmake/gflags
+VERBOSE=1 cmake --build build

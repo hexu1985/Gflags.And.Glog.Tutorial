@@ -4,7 +4,7 @@
 DEFINE_bool(verbose, false, "Display program name before message");
 DEFINE_string(message, "Hello world!", "Message to print");
 
-static bool IsNonEmptyMessage(const char *flagname, const std::string &value)
+static bool IsNonEmptyMessage(const char* flagname, const std::string& value)
 {
     return value[0] != '\0';
 }

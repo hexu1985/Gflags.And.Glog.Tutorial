@@ -13,8 +13,6 @@ else()
 	message(STATUS "Not found gflags")
 endif ()
 
-#include_directories( ${GFLAGS_INCLUDE_DIR} )
-
 aux_source_directory(. SRC_LIST)
 
 add_executable(sample ${SRC_LIST})
