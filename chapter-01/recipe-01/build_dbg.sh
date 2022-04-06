@@ -5,5 +5,6 @@ cmake -H. -Bbuild -DCMAKE_INSTALL_PREFIX=~/local/gflags_dbg \
     -DBUILD_SHARED_LIBS=ON \
 	-DINSTALL_STATIC_LIBS=ON \
 	-DINSTALL_SHARED_LIBS=ON \
+    -DBUILD_TESTING=ON \
 	-DREGISTER_INSTALL_PREFIX=OFF 
 VERBOSE=1 cmake --build build --target install
