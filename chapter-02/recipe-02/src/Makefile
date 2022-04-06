@@ -2,9 +2,9 @@
 RM = rm -f
 CXX = g++
 CXXFLAGS = -Wall -g -std=c++11
-INCLUDES = -I$(HOME)/local/include
+INCLUDES = -I$(HOME)/local/gflags/include
 LDFLAGS = -lgflags -lpthread
-LDPATH = -L$(HOME)/local/lib
+LDPATH = -L$(HOME)/local/gflags/lib
 VPATH = 
 
 SOURCES = $(shell ls *.cpp)
