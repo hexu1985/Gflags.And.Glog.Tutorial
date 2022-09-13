@@ -1,4 +1,5 @@
 #include <glog/logging.h>
+#include <unistd.h>
 
 int main(int argc,char* argv[])
 {
@@ -8,6 +9,7 @@ int main(int argc,char* argv[])
     LOG(INFO) << str ;                 // << " cookies";    
     LOG(WARNING) << "warning test";    // 会输出一个Warning日志    
     LOG(ERROR) << "error test";        // 会输出一个Error日志 
+    LOG(INFO) << "pid: " << getpid();
 
     google::ShutdownGoogleLogging();
 
