@@ -33,22 +33,14 @@
 - [9. 自定义失败处理函数](chapter-03/recipe-09/README.md)
 - [10. 精简日志字符串信息](chapter-03/recipe-10/README.md)
 - [11. 自动删除旧日志文件](chapter-03/recipe-11/README.md)
-- [12. Windows用户的注意事项](chapter-03/recipe-12/README.md)
-
 
 
 ### 参考文档
 
 <https://gflags.github.io/gflags/>
- 
 <https://blog.csdn.net/lezardfu/article/details/23753741>
-
 <http://dreamrunner.org/blog/2014/03/09/gflags-jian-ming-shi-yong/>
-
 <https://github.com/google/glog/blob/master/doc/glog.html>
-
 <https://www.jianshu.com/p/d55838893e9c>
-
 <http://www.yeolar.com/note/2014/12/20/glog/>
-
 <https://www.cnblogs.com/JZ-Ser/articles/7909800.html>
