@@ -5,8 +5,8 @@
 
 int main(int argc,char* argv[])
 {
-    google::ParseCommandLineFlags(&argc, &argv, true);
     google::InitGoogleLogging(argv[0]);
+    gflags::ParseCommandLineFlags(&argc, &argv, true);
 
     LOG(INFO) << "LOG(INFO)";
     LOG(WARNING) << "LOG(WARNING)";
@@ -21,7 +21,7 @@ int main(int argc,char* argv[])
     RAW_LOG(ERROR,"RAW_LOG");
 
     google::ShutdownGoogleLogging();
-    google::ShutDownCommandLineFlags();
+    gflags::ShutDownCommandLineFlags();
 
     return 0;
 }

@@ -24,17 +24,13 @@ echo "./sample --stderrthreshold=0"
 echo
 echo
 
-rm -r ./log
-mkdir ./log
-echo "./sample --log_dir=log"
-./sample --log_dir=log
-ls -l log
+echo "./sample --log_dir=."
+./sample --log_dir=.
+ls -l 
 
 echo
 echo
 
-rm -r ./log
-mkdir ./log
-echo "./sample --log_dir=log --minloglevel=2"
-./sample --log_dir=log --minloglevel=2
-ls -l log
+echo "./sample --log_dir=. --minloglevel=2"
+./sample --log_dir=. --minloglevel=2
+ls -l 
