@@ -1,10 +1,11 @@
 #include <errno.h>
+#include <gflags/gflags.h>
 #include <glog/logging.h>
 #include <glog/raw_logging.h>   // for RAW_LOG
 
 int main(int argc,char* argv[])
 {
-    gflags::ParseCommandLineFlags(&argc, &argv, true);
+    google::ParseCommandLineFlags(&argc, &argv, true);
     google::InitGoogleLogging(argv[0]);
 
     LOG(INFO) << "LOG(INFO)";
@@ -20,7 +21,7 @@ int main(int argc,char* argv[])
     RAW_LOG(ERROR,"RAW_LOG");
 
     google::ShutdownGoogleLogging();
-    gflags::ShutDownCommandLineFlags();
+    google::ShutDownCommandLineFlags();
 
     return 0;
 }
