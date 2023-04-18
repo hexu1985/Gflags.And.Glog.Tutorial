@@ -19,6 +19,9 @@
 - [4. 检验输入参数是否合法](chapter-02/recipe-04/README.md)
 - [5. 定制你自己的help信息与version信息](chapter-02/recipe-05/README.md)
 - [6. 判断flag变量是否被用户使用](chapter-02/recipe-06/README.md)
+- [7. 允许未定义的输入参数](chapter-02/recipe-07/README.md)
+- [8. 通过配置文件传递参数](chapter-02/recipe-08/README.md)
+- [9. 通过环境变量传递参数](chapter-02/recipe-09/README.md)
 
 ### [Chapter3: glog使用说明](chapter-03/README.md)
 
@@ -44,3 +47,4 @@
 <https://www.jianshu.com/p/d55838893e9c>
 <http://www.yeolar.com/note/2014/12/20/glog/>
 <https://www.cnblogs.com/JZ-Ser/articles/7909800.html>
+<https://blog.csdn.net/u013066730/article/details/84103083>
