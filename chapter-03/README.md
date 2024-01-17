@@ -11,5 +11,6 @@
 - [9. 自定义失败处理函数](recipe-09/README.md)
 - [10. 精简日志字符串信息](recipe-10/README.md)
 - [11. 自动删除旧日志文件](recipe-11/README.md)
+- [12. 手动刷新日志文件](recipe-12/README.md)
 
 

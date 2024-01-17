@@ -8,5 +8,6 @@ echo "./sample"
 echo
 echo
 
-echo "GLOG_log_dir=. GLOG_alsologtostderr=true ./sample"
-GLOG_log_dir=. GLOG_alsologtostderr=true ./sample
+mkdir -p log
+echo "GLOG_log_dir=./log GLOG_alsologtostderr=true ./sample"
+GLOG_log_dir=./log GLOG_alsologtostderr=true ./sample
